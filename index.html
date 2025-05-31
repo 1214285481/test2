@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>MVA Prediction</title>
+
+</head>
+
+<body>
+
+<h1>Predict MVA</h1>
+
+<form action="/predict" method="post">
+
+<label for="SBP">SBP:</label>
+
+<input type="number" step="any" id="SBP" name="SBP" required><br>
+
+<label for="Killip_class">Killip class:</label>
+
+<select id="Killip_class" name="Killip_class" required>
+
+<option value="1">Ⅰ</option>
+
+<option value="2">Ⅱ</option>
+
+<option value="3">Ⅲ</option>
+
+<option value="4">Ⅳ</option>
+
+</select><br>
+
+<label for="History_of_drinking">History of drinking:</label>
+
+<select id="History_of_drinking" name="History_of_drinking" required>
+
+<option value="0">No</option>
+
+<option value="1">Yes</option>
+
+</select><br>
+
+<label for="CK_MB">CK-MB:</label>
+
+<input type="number" step="any" id="CK_MB" name="CK_MB" required><br>
+
+<label for="Serum_potassium_at_admission">Serum potassium at admission:</label>
+
+<input type="number" step="any" id="Serum_potassium_at_admission" name="Serum_potassium_at_admission" required><br>
+
+<label for="Serum_potassium_at_24h_after_PCI">Serum potassium at 24h after PCI:</label>
+
+<input type="number" step="any" id="Serum_potassium_at_24h_after_PCI" name="Serum_potassium_at_24h_after_PCI" required><br>
+
+<label for="Monocytes">Monocytes:</label>
+
+<input type="number" step="any" id="Monocytes" name="Monocytes" required><br>
+
+<label for="NLR">NLR:</label>
+
+<input type="number" step="any" id="NLR" name="NLR" required><br>
+
+<label for="SII">SII:</label>
+
+<input type="number" step="any" id="SII" name="SII" required><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+</body>
+
+</html>

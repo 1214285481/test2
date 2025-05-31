@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Prediction Result</title>
+
+</head>
+
+<body>
+
+<h1>Prediction Result</h1>
+
+<p> SBP:{{SBP}}</P>
+
+<p> Killip class:
+
+{% if Killip_class==1 %}Ⅰ
+
+{% elif Killip_class==2 %}Ⅱ
+
+{% elif Killip_class==3 %}Ⅲ
+
+{% else %}Ⅳ{% endif %}
+
+</P>
+
+<p> History of drinking:
+
+{% if History_of_drinking==0 %}No
+
+{% else %}Yes{% endif %}
+
+</P>
+
+<p> CK-MB:{{CK_MB}}</P>
+
+<p> Serum potassium at admission:{{Serum_potassium_at_admission}}</P>
+
+<p> Serum potassium at 24h after PCI:{{Serum_potassium_at_24h_after_PCI}}</P>
+
+<p> Monocytes:{{Monocytes}}</P>
+
+<p> NLR:{{NLR}}</P>
+
+<p> SII:{{SII}}</P>
+
+<h2>Predicted Class: {{predicted_class_name}}(Class ID:{{predicted_class}})<h2>
+
+<a href="/">Predict Again</a>
+
+</body>
+
+</html>
